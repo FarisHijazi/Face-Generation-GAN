@@ -30,7 +30,12 @@ However any simple dataset can be used such as the [Celeba dataset](http://mmlab
 
 ## Results
 
-96x96 Generated samples after 45 epochs
+64x64 Generated samples after 20 epochs. Training time: ~5 hours on x2 GTX 1080-Ti GPUs
+
+![64x64](assets/generated_sample_64x64(epoch20).png)
+
+96x96 Generated samples after 45 epochs. Training time: ~20 hours on x2 GTX 1080-Ti GPUs
+
 ![96x96](assets/generated_sample_96x96(epoch45).png)
 
 ## [Tensorboard](https://www.tensorflow.org/tensorboard)
@@ -41,3 +46,6 @@ Histograms of each layer and it's gradient
 
 ![histograms](./assets/tensorboard_histograms.png)
 
+## [Certificate to *Udacity Connect Deep Learning NanoDegree*](https://graduation.udacity.com/confirm/CTG23EKQ)
+
+![certificate](assets/Certificate-ConnectDeepLearning-FarisHijazi.png)
