@@ -67,8 +67,11 @@ def weights_init_normal(m, gain=0.02):
 
 
 # helper function for viewing a list of passed in sample images
-def view_samples(epoch, sample, shape=None):
-    fig, axes = plt.subplots(figsize=(16,4), nrows=2, ncols=8, sharey=True, sharex=True)
+def view_samples(sample, epoch=None, shape=None):
+    n_imgs = len(sample)
+    ncols = 8
+    nrows = int(np.floor(n_imgs/ncols))
+    fig, axes = plt.subplots(figsize=(ncols*2, nrows*2), nrows=nrows, ncols=ncols, sharey=True, sharex=True)
     for ax, img in zip(axes.flatten(), sample):
         img = np.transpose(unscale(img), (1, 2, 0))
         ax.xaxis.set_visible(False)
@@ -81,7 +84,8 @@ def view_samples(epoch, sample, shape=None):
             shape = w, w, 3
         
         im = ax.imshow(img.reshape(shape))
-    fig.suptitle(f'[Epoch: {epoch}] Generated samples')
+    if epoch is not None:
+        fig.suptitle(f'[Epoch: {epoch}] Generated samples')
     return fig, axes
 
 
@@ -172,6 +176,7 @@ def dict_update(d, u):
     import collections.abc
     if u is None:
         u = {}
+    
     for k, v in u.items():
         if isinstance(v, collections.abc.Mapping):
             d[k] = dict_update(d.get(k, {}), v)

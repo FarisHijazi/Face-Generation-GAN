@@ -11,8 +11,7 @@ from utils import dict_update
 class Sess(UserDict):
     
     def __init__(self,
-                 init='sess.sess.json',
-                 defaults={
+                 init={
                      'batch_size': 64,
                      'path': f'./runs/untitled'
                  },
@@ -51,15 +50,7 @@ class Sess(UserDict):
             'alltime_start_time': time.time(),
         }
 
-#         if type(init) is str:
-#             self.load(init)
-#             init = self
-        if type(init) is not dict:
-            init = {}
-        
-#         dict_update(sess, dict_update(defaults, dict_update(sess, ckpt)))
-        
-        dict_update(self, dict_update(dict_update(self.defaults, defaults), init))
+        dict_update(self, dict_update(self.defaults, init))
     
     def without_keys(self, keys):
         return {k: v for k, v in self.items() if k not in keys}
