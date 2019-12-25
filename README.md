@@ -30,6 +30,10 @@ However any simple dataset can be used such as the [Celeba dataset](http://mmlab
 
 ## Results
 
+Progress during training (epochs 0 to 29):
+
+![progress_gif](assets/64x64_generated_images_progress_timelapse.gif)
+
 64x64 Generated samples after 20 epochs. Training time: ~5 hours on x2 GTX 1080-Ti GPUs
 
 ![64x64](assets/generated_sample_64x64(epoch20).png)
