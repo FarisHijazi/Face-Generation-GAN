@@ -46,7 +46,7 @@ Progress during training (epochs 0 to 29):
 
 A lot of work was put into the checkpointing system and logging, as well as writing to tensorboard.
 
-Histograms of each layer and it's gradient
+Histograms of each layer and its gradient
 
 ![histograms](./assets/tensorboard_histograms.png)
 
