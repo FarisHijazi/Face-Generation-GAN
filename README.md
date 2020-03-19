@@ -1,4 +1,4 @@
-# Anime-GAN Anime Face Generation using [Generative Adverserial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
+# Face generation: Generates faces of people or Anime characters using [Generative Adverserial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
 Author: Faris Hijazi
 
@@ -29,6 +29,10 @@ However any simple dataset can be used such as the [Celeba dataset](http://mmlab
 - [auxiliary classifier GAN ac gan from scratch with keras](https://machinelearningmastery.com/how-to-develop-an-auxiliary-classifier-gan-ac-gan-from-scratch-with-keras/)
 
 ## Results
+
+Example of human faces:
+
+![human_face_result](assets/generated_human_faces.png)
 
 Progress during training (epochs 0 to 29):
 
