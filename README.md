@@ -1,6 +1,8 @@
 # Face generation: Generates faces of people or Anime characters using [Generative Adverserial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
-Author: Faris Hijazi
+**Author: Faris Hijazi**
+
+Making fake waifus because waifus are not real );
 
 This is a fork of the [Udacity deep learning with Pytorch nanodegree](https://www.udacity.com/course/deep-learning-pytorch--ud188) [DCGAN face generation project](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/project-face-generation).
 
