@@ -1,5 +1,7 @@
 # Face generation: Generates faces of people or Anime characters using [Generative Adverserial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
+NOTE: this is an extremely simple DCGAN, and the architecture is obviously outdated
+
 **Author: Faris Hijazi**
 
 Making fake waifus because waifus are not real );
